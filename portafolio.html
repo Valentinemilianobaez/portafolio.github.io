@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Valentin Baez, desarrollador full stack y front-end.">
+    <meta name="keywords" content="portafolio, desarrollo web, HTML, CSS, JavaScript, proyectos">
+    <meta name="author" content="Valentin Baez">
+    <title>Portafolio Valentin Baez</title>
+    <link rel="stylesheet" href="portafolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loader"></div>
+
+    <!-- Barra de progreso del scroll -->
+    <div id="scroll-bar"></div>
+
+    <!-- Botón de cambio de tema -->
+    <button id="theme-toggle">Cambiar Tema</button>
+
+    <!-- Sección principal -->
+    <header id="section-principal" class="animate-on-scroll">
+        <div class="box-principal">
+            <p>Hola, mi nombre es</p>
+            <h1>Valentin Baez</h1>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/valentin-baez-746b35289/">
+                    <img src="../imagenes/linkedin.png" alt="LinkedIn de Valentin Baez">
+                </a>
+                <a href="https://github.com/Valentinemilianobaez">
+                    <img src="../imagenes/github.png" alt="GitHub de Valentin Baez">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Sobre mí -->
+    <section id="about" class="animate-on-scroll">
+        <h2>Sobre mí</h2>
+        <p>Soy un estudiante de Ingeniería en Sistemas apasionado por el desarrollo web, especialmente en front-end y full stack. Mi objetivo es convertirme en Project Manager, combinando habilidades técnicas con gestión de proyectos.</p>
+        <img src="../imagenes/tu-foto.jpg" alt="Foto de Valentin Baez" class="profile-pic">
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills" class="animate-on-scroll">
+      <h2>Habilidades</h2>
+      <div class="skill">
+          <label>HTML</label>
+          <progress value="90" max="100"></progress>
+      </div>
+      <div class="skill">
+          <label>CSS</label>
+          <progress value="85" max="100"></progress>
+      </div>
+      <div class="skill">
+          <label>JavaScript</label>
+          <progress value="70" max="100"></progress>
+      </div>
+  </section>    
+
+<!-- Carrusel de Proyectos -->
+<section id="projects-carousel">
+    <h2>Mis Proyectos</h2>
+    <div class="carousel">
+        <button class="prev">&lt;</button>
+        <div class="carousel-track-container">
+            <ul class="carousel-track">
+                <li class="carousel-card">
+                    <img src="../imagenes/todo.png" alt="Proyecto Lista de Tareas">
+                    <h3>Lista de Tareas</h3>
+                    <p>Es una web donde puedes escribir las tareas del día y tacharlas al completarlas.</p>
+                    <a href="https://link-al-proyecto.com" target="_blank">Ver proyecto</a>
+                </li>
+                <li class="carousel-card">
+                    <img src="../imagenes/game.png" alt="Proyecto Juego">
+                    <h3>Juego Interactivo</h3>
+                    <p>Un juego sencillo creado con HTML, CSS y JavaScript para practicar lógica.</p>
+                    <a href="https://link-al-proyecto.com" target="_blank">Ver proyecto</a>
+                </li>
+
+                <!-- Más proyectos -->
+            </ul>
+        </div>
+        <button class="next">&gt;</button>
+    </div>
+</section>
+>
+
+    <!-- Sección de contacto -->
+    <section id="contact" class="animate-on-scroll">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/tu-correo" method="POST">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <a href="c:\Users\Valentin\Downloads\curriculum.pdf.pdf" class="btn-cv" download>Descargar CV</a>
+    </section>
+    <button id="back-to-top">↑</button>
+
+
+    <script src="portafolio.js"></script>
+
+</body>
+</html>
